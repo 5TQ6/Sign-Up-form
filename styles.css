@@ -72,7 +72,21 @@ body {
 }
 #message {
     font-family: dosis;
+    position: absolute;
+    top: 50px;
 }
+.toggle-password {
+    position: absolute;
+    font-size: 26px;
+    width: 35px;
+    height: 35px;
+   cursor: pointer;
+    top: 20px;
+    right: 3px;
+    text-align: center;
+    line-height: 30px;
+}
+
 p {
     font-size: 29px;
     color: #FDF5E3;
@@ -87,7 +101,7 @@ label {
     margin: 20px 50px 7px 0px;
     display: flex;
     flex-direction: column;
-    
+    position: relative;
 }
 
 button {
@@ -110,14 +124,15 @@ span {
     transition: all .2s ease-out;
 }
 input {
-    border-radius: 3px;
+    
+    border-radius: 10px;
     outline: none;
     box-shadow: 3px 2px 9px black inset;
     padding: 3px;
     background: #642B73;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    text-indent: 10px;
 }
 input::placeholder {
     color: black;

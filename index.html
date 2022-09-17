@@ -31,11 +31,17 @@
                         </label>
                         <label for="password"> PASSWORD
                             <input type="password" id="password" onchange="check()" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                            <div class="toggle-password">
+                                <i id="eye" onclick="show()">👁</i>
+                               
+                            </div>
+                            
+                            <span id="message"></span>
                         </label>
                         <label for="confirm"> CONFIRM PASSWORD
                             <input type="password" id="confirm" onchange="check()" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                         </label>
-                        <span id="message"></span>
+                        
                     </div>
                 </form>
             </div>
