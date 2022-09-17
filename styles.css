@@ -22,7 +22,7 @@ body {
     background-color: #05032C;
     height: 100vh;
     width: 70%;
-    box-shadow: rgba(240, 46, 170, 0.4) -15px 5px, rgba(240, 46, 170, 0.3) -20px 10px, rgba(240, 46, 170, 0.2) -25px 15px, rgba(240, 46, 170, 0.1) -30px 20px, rgba(240, 46, 170, 0.05) -35px 25px , rgba(240, 46, 170, 0.4) 15px 5px, rgba(240, 46, 170, 0.3) 20px 10px, rgba(240, 46, 170, 0.2) 25px 15px, rgba(240, 46, 170, 0.1) 30px 20px, rgba(240, 46, 170, 0.05) 35px 25px;;
+    box-shadow: rgba(240, 46, 170, 0.4) -15px 5px, rgba(240, 46, 170, 0.3) -20px 10px, rgba(240, 46, 170, 0.2) -25px 15px, rgba(240, 46, 170, 0.1) -30px 20px, rgba(240, 46, 170, 0.05) -35px 25px , rgba(240, 46, 170, 0.4) 15px 5px, rgba(240, 46, 170, 0.3) 20px 10px, rgba(240, 46, 170, 0.2) 25px 15px, rgba(240, 46, 170, 0.1) 30px 20px, rgba(240, 46, 170, 0.05) 35px 25px;
 }
 
 #left {
@@ -32,6 +32,10 @@ body {
     height: 100%;
     margin-top: -2px;
     margin-bottom: -2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 #right {
     display: flex;
@@ -85,6 +89,25 @@ body {
     right: 3px;
     text-align: center;
     line-height: 30px;
+}
+
+#logo {
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1));
+    text-align: center;
+    color: white;
+}   
+#credit {
+    color: #05032C;
+    text-shadow: 2px 2px white;
+    margin-left: 65px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 90px;
+    transition: all 0.2s ease-in-out;
 }
 
 p {
@@ -162,4 +185,8 @@ input::-webkit-inner-spin-button {
 button:hover {
     scale: 1.1;
     transform-origin: bottom left;
+}
+a:hover {
+    scale: 1.2;
+    text-shadow: rgba(240, 46, 170, 0.4) -15px 5px, rgba(240, 46, 170, 0.3) -20px 10px, rgba(240, 46, 170, 0.2) -25px 15px, rgba(240, 46, 170, 0.1) -30px 20px, rgba(240, 46, 170, 0.05) -35px 25px ;
 }
