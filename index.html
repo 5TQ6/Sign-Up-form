@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" differ></script>
     <title>Sign-Up</title>
 </head>
 <body>
@@ -13,32 +14,33 @@
         <div id="right">
             <div id="upper"><p id="upper-p">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br><br> You know you want to!</p></div>
             <div id="middle">
-                <form action="post">
+                <form id="my-form">
                     <h1>Let's do this</h1>
                     <div id="inputs">
                         <label for="first"> FIRST NAME
-                            <input type="text">
+                            <input type="text" id="first" required>
                         </label>
                         <label for="last"> LAST NAME
-                            <input type="text">
+                            <input type="text" id="last" required>
                         </label>
                         <label for="email"> EMAIL
-                            <input type="email">
+                            <input type="email" id="email" placeholder="example@example.com" required>
                         </label>
                         <label for="phone"> PHONE NUMBER
-                            <input type="tel">
+                            <input type="number" id="phone"  required>
                         </label>
                         <label for="password"> PASSWORD
-                            <input type="password" required>
+                            <input type="password" id="password" onchange="check()" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                         </label>
                         <label for="confirm"> CONFIRM PASSWORD
-                            <input type="password" required>
+                            <input type="password" id="confirm" onchange="check()" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                         </label>
+                        <span id="message"></span>
                     </div>
                 </form>
             </div>
             <div id="bottom">
-                <button>Create Account</button>
+                <button type="submit" id="submit" form="my-form" onclick="checkPass()">Create Account</button>
                 <p id="lower-p">Already have an account? <span>Log in</span></p>
             </div>
         </div>
