@@ -116,13 +116,9 @@ button {
     cursor: pointer;
     font-family: dosis-light, sans-serif;
     font-size: 16px;
-}
-span {
-    color: #2e4dcc;
-    text-shadow: 2px 2px 6px black;
-    cursor: pointer;
     transition: all .2s ease-out;
 }
+
 input {
     
     border-radius: 10px;
@@ -152,4 +148,18 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+#log {
+    color: #2e4dcc;
+    text-shadow: 2px 2px 6px black;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+#log:hover {
+    transform: scale(1.9);
+    color: #C6426E;
+}
+button:hover {
+    scale: 1.1;
+    transform-origin: bottom left;
 }
