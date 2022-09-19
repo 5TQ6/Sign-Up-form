@@ -25,6 +25,36 @@ body {
     box-shadow: rgba(240, 46, 170, 0.4) -15px 5px, rgba(240, 46, 170, 0.3) -20px 10px, rgba(240, 46, 170, 0.2) -25px 15px, rgba(240, 46, 170, 0.1) -30px 20px, rgba(240, 46, 170, 0.05) -35px 25px , rgba(240, 46, 170, 0.4) 15px 5px, rgba(240, 46, 170, 0.3) 20px 10px, rgba(240, 46, 170, 0.2) 25px 15px, rgba(240, 46, 170, 0.1) 30px 20px, rgba(240, 46, 170, 0.05) 35px 25px;
 }
 
+@media (max-width: 40em) {
+    #logo {
+        font-size: .5em;
+    }
+    #upper,
+    #bottom {
+        font-size: .4em;
+        margin: 1em;
+        min-height: 15%;
+    }
+    #bottom {
+        min-height: 15%;
+    }
+    #middle {
+        min-height: 55%;
+    }
+    
+    #container {
+        flex-direction: column;
+    }
+    #left, #right {
+        min-width: 100%;
+        min-height: 65%;
+    }
+    #left {
+        min-height: 35%;
+    }
+    
+}
+
 #left {
     background: url(leftdiv.svg) no-repeat center ;
     background-size: cover;
@@ -50,20 +80,21 @@ body {
 #middle {
     background-color: rgba(5, 3, 44, .7);
     display: flex;
-    padding: 20px;
+    padding: 1.2em;
     height: 43%;
-    margin: 20px 0px;
+    margin: 1.2em 0;
     color: white;
     box-shadow: 0px 2px 10px black, 0 -2px 10px black ;
     overflow: auto;
+    font-size: 1.25em;
 }
 
 #upper-p {
     text-shadow: 4px 4px 2px #000000;
-    
+    font-size: 1.5em;
 }
 #lower-p {
-    font-size: 16px;
+    font-size: 1.2em;
 }
 
 #inputs {
@@ -102,23 +133,23 @@ body {
     color: #05032C;
     text-shadow: 2px 2px white;
     margin-left: 65px;
+    font-size: 1rem;
 }
 a {
     text-decoration: none;
     color: white;
-    font-size: 90px;
+    font-size: 5em;
     transition: all 0.2s ease-in-out;
 }
 
 p {
-    font-size: 29px;
+    font-size: 1.5em;
     color: #FDF5E3;
-    margin-left: 20px;
+    margin-left: 1.2em;
 }
 h1 {
     margin-top: 0px;
 }
-
 
 label {
     margin: 20px 50px 7px 0px;
@@ -128,17 +159,17 @@ label {
 }
 
 button {
-    margin-left: 20px;
+    margin-left: 1.2em;
     outline: none;
     border: none;
-    padding: 8px 20px;
+    padding: .5em 1.2em;
     border-radius: 3px;
     background-color: #2d47b1;
     color: white;
     box-shadow: -3px -3px 5px black inset;
     cursor: pointer;
     font-family: dosis-light, sans-serif;
-    font-size: 16px;
+    font-size: 1.2em;
     transition: all .2s ease-out;
 }
 
